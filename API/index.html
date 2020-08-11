@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>JavaScript Object Notation</h2>
+    <script>
+        const user = {
+            id: 224,
+            name: "Sahriar",
+            lover: {
+                name: "Jamila",
+                phone: 017
+            },
+            firendsName: ["Kamal", "Jamal", "Salam"],
+            friendsAge: [12, 14, 16]};
+        //{"id":224,"name":"Saharian"} //Convert JSON
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+
+        //first way to JSON to Object COnvert
+        const userFromJSON = JSON.parse(userJSON);
+        //{id: 224, name: "Saharian"}
+        console.log(userFromJSON);
+    </script>
+</body>
+</html>
